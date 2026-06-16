@@ -108,7 +108,9 @@ user_suggestion: Label target klasifikasi, di mana bernilai 1 jika pengguna mere
 Dari hasil eksplorasi data, ditemukan bahwa:
 
 Distribusi Kelas: Dataset memiliki dua kelas target, yaitu kelas 1 (Rekomendasi) sebanyak 9.968 ulasan dan kelas 0 (Tidak Rekomendasi) sebanyak 7.526 ulasan.
+
 <img width="762" height="512" alt="6b38a9e3-d8f7-4d8c-bf79-a749e28ca2c4" src="https://github.com/user-attachments/assets/714630cb-2473-4084-babc-a3d249b3828f" />
+
 
 Karakteristik Teks: Teks ulasan mengandung banyak noise seperti tanda baca, angka, karakter khusus, dan huruf kapital/kecil yang tidak seragam, sehingga memerlukan pembersihan secara sistematis.
 
