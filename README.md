@@ -81,6 +81,11 @@ Dataset utama (train.csv) memiliki ribuan baris, namun proyek ini berfokus pada 
 📌 Uraian Fitur Utama:
 
 user_review: Berisi teks ulasan lengkap dari pemain mengenai pengalaman mereka bermain game di Steam (Tipe: String).
+<img width="1173" height="751" alt="image" src="https://github.com/user-attachments/assets/8b063f2d-8c87-4bb8-843c-ad0a2e902aa2" />
+
+
+
+
 
 user_suggestion: Label target klasifikasi, di mana bernilai 1 jika pengguna merekomendasikan game (Positif), dan 0 jika tidak merekomendasikan (Negatif) (Tipe: Integer).
 <img width="1091" height="416" alt="3fccfc6e-2b91-44f5-861b-f3b04d426506" src="https://github.com/user-attachments/assets/774ecb3c-560a-41d3-bc83-669fdd62235f" />
