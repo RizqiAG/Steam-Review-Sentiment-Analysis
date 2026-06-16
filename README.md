@@ -78,7 +78,9 @@ Bagian ini adalah proses di mana mesin benar-benar "belajar". Fungsi LinearSVC()
 
 8. Evaluasi Model (Evaluation)
 Setelah model pintar, kita harus mengetesnya. Fungsi .predict() menyuruh model menebak sentimen dari data uji (X_test_vec) yang belum pernah ia lihat sebelumnya. Hasil tebakannya (y_pred) kemudian dicocokkan dengan kunci jawaban aslinya (y_test) menggunakan accuracy_score dan classification_report untuk mendapatkan nilai akurasi, presisi, dan recall.
+
 <img width="755" height="166" alt="image" src="https://github.com/user-attachments/assets/579073b4-d351-42a7-952c-ace4ee3504d9" />
+
 
 📂 Dataset Components:
 Dataset utama (train.csv) memiliki ribuan baris, namun proyek ini berfokus pada dua kolom esensial untuk NLP:
@@ -86,6 +88,7 @@ Dataset utama (train.csv) memiliki ribuan baris, namun proyek ini berfokus pada 
 📌 Uraian Fitur Utama:
 
 user_review: Berisi teks ulasan lengkap dari pemain mengenai pengalaman mereka bermain game di Steam (Tipe: String).
+
 <img width="1173" height="751" alt="image" src="https://github.com/user-attachments/assets/8b063f2d-8c87-4bb8-843c-ad0a2e902aa2" />
 
 
