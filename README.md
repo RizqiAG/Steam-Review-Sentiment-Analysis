@@ -158,7 +158,9 @@ Evaluation Model
 Evaluasi model klasifikasi dilakukan dengan membandingkan hasil prediksi model terhadap data uji yang nilai sebenarnya sudah diketahui menggunakan metrik Accuracy, Precision, Recall, dan F1-Score.
 
 📌 Hasil Evaluasi:
+
 <img width="702" height="241" alt="731bc580-6b11-4f38-bf58-a205922cade7" src="https://github.com/user-attachments/assets/8ef698fc-1ec8-4153-ae50-bca5eb175edd" />
+
 Naive Bayes Classifier: Secara umum memberikan hasil yang cukup baik dan eksekusi yang sangat cepat, namun performanya sedikit di bawah SVM dalam membedakan konteks kalimat yang kompleks.
 
 Support Vector Machine (SVM): Menunjukkan akurasi tertinggi di atas 85%. Model SVM memperlihatkan skor precision dan recall yang sangat seimbang (0.86 dan 0.88 untuk kelas 1), menandakan bahwa model ini tidak bias dan sangat robust.
