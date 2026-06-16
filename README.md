@@ -8,6 +8,7 @@ Rizqi Agung Raya (NIM: 2330511037)
 Rian Alpriyanda Kurniawan (NIM: 2330511025)
 
 Project Overview
+
 <img width="640" height="832" alt="steam-reviews-useful-as-always-v0-99jtzxwn73dd1" src="https://github.com/user-attachments/assets/84af3329-5dfd-4455-9b78-d368a1228c22" />
 
 Industri permainan video menerima ribuan hingga jutaan ulasan setiap harinya di platform distribusi digital seperti Steam. Banyaknya jumlah ulasan berupa teks bebas (free-text) merupakan permasalahan tersendiri bagi para pengembang (developer) game. Membaca ulasan secara manual untuk mengetahui apakah sentimen pemain positif atau negatif sangat tidak efisien dan memakan waktu.
