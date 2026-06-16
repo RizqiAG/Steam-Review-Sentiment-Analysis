@@ -61,7 +61,10 @@ Bagian terakhir ini menggunakan matplotlib untuk mengubah angka hitungan tadi me
 
 5.Pembagian Data (Train-Test-Split)
 Dataset teks yang sudah bersih dibagi menjadi data latih (training data) dan data uji (testing data) dengan proporsi 80:20 agar hasil eksperimen dapat divalidasi dengan adil.
+
 <img width="542" height="197" alt="image" src="https://github.com/user-attachments/assets/29b2fbf6-f928-4dbf-8deb-70a188ecaf91" />
+
+
 
 
 6.Ekstraksi Fitur (TF-IDF Vectorization)
