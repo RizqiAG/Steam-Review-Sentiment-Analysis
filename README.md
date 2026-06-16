@@ -1,6 +1,7 @@
 # Steam-Review-Sentiment-Analysis
 Proyek Analisis Sentimen Ulasan Game di Steam menggunakan algoritma Naive Bayes dan SVM (LinearSVC).
 Analisis Sentimen Ulasan Game di Platform Steam Menggunakan Naive Bayes Classifier dan SVM dengan TF-IDF
+
 Anggota Kelompok:
 
 Rizqi Agung Raya (NIM: 2330511037)
