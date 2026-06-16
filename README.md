@@ -41,7 +41,39 @@ Ekstraksi Fitur (TF-IDF): Menggunakan Term Frequency-Inverse Document Frequency 
 Modeling Komparatif: Melatih data menggunakan dua algoritma (Multinomial Naive Bayes dan LinearSVC) untuk menemukan model dengan akurasi tertinggi.
 
 Data Understanding
-Dataset yang digunakan diperoleh dari platform Kaggle: Sentiment Analysis for Steam Reviews. Pada tahap ini, kita memahami struktur dataset yang berfokus pada kolom teks ulasan dan label rekomendasi.
+Dataset yang digunakan diperoleh dari platform Kaggle: https://www.kaggle.com/datasets/piyushagni5/sentiment-analysis-for-steam-reviews. Pada tahap ini, kita memahami struktur dataset yang berfokus pada kolom teks ulasan dan label rekomendasi.
+
+1. Persiapan dan Unduh Data
+Bagian ini berfungsi untuk memanggil semua "alat kerja" (library) yang dibutuhkan dan mengunduh dataset secara otomatis dari server Kaggle. Variabel path akan menyimpan alamat folder tempat dataset tersebut diunduh di dalam sistem.
+<img width="892" height="222" alt="Screenshot 2026-06-16 095854" src="https://github.com/user-attachments/assets/232c6ebf-0650-4908-ac8a-0229d99392be" />
+
+2. Membaca dan Menampilkan Data
+Bagian ini berfungsi untuk mencari file train.csv di dalam folder hasil unduhan tadi, lalu membacanya menjadi format tabel (DataFrame) menggunakan Pandas (pd). Fungsi df.head() digunakan untuk mengintip 5 baris teratas agar kita tahu wujud datanya.
+<img width="437" height="162" alt="image" src="https://github.com/user-attachments/assets/686492fd-6660-48ce-82f8-19869fe59c92" />
+
+3. Menghitung Distribusi Sentimen
+Fungsi value_counts() di sini sangat penting. Gunanya untuk menghitung berapa banyak jumlah ulasan yang merekomendasikan game (angka 1) dan yang tidak merekomendasikan (angka 0). Ini adalah inti dari analisis kita untuk mengetahui apakah datanya seimbang.
+<img width="527" height="117" alt="image" src="https://github.com/user-attachments/assets/721bde44-166b-4ba2-a1f5-a21ba1818f9c" />
+
+4. Visualisasi Grafik Batang
+Bagian terakhir ini menggunakan matplotlib untuk mengubah angka hitungan tadi menjadi sebuah grafik batang (bar chart) yang menarik secara visual. Grafik inilah yang hasilnya kamu screenshot dan masukkan ke GitHub tadi.
+<img width="635" height="215" alt="image" src="https://github.com/user-attachments/assets/d6283c76-2fd0-4526-9c21-d7434b89dfa2" />
+
+5.Pembagian Data (Train-Test-Split)
+Dataset teks yang sudah bersih dibagi menjadi data latih (training data) dan data uji (testing data) dengan proporsi 80:20 agar hasil eksperimen dapat divalidasi dengan adil.
+<img width="542" height="197" alt="image" src="https://github.com/user-attachments/assets/29b2fbf6-f928-4dbf-8deb-70a188ecaf91" />
+
+6.Ekstraksi Fitur (TF-IDF Vectorization)
+Teks diubah menjadi representasi numerik menggunakan TfidfVectorizer. Fitur dibatasi menjadi 5000 kata paling penting (max_features=5000) untuk mengurangi beban komputasi.
+<img width="592" height="152" alt="image" src="https://github.com/user-attachments/assets/1ddaf4b0-0ade-4242-9e7a-8c86d6af5d26" />
+
+7. Pelatihan Model (Modeling)
+Bagian ini adalah proses di mana mesin benar-benar "belajar". Fungsi LinearSVC() memanggil algoritma Support Vector Machine. Kemudian, fungsi .fit() memasukkan data latih (X_train_vec berupa angka TF-IDF, dan y_train berupa label sentimen) agar model bisa mencari pola garis pembatas (hyperplane) antara ulasan positif dan negatif.
+<img width="676" height="135" alt="image" src="https://github.com/user-attachments/assets/f005733d-6285-4316-a982-462069f9835e" />
+
+8. Evaluasi Model (Evaluation)
+Setelah model pintar, kita harus mengetesnya. Fungsi .predict() menyuruh model menebak sentimen dari data uji (X_test_vec) yang belum pernah ia lihat sebelumnya. Hasil tebakannya (y_pred) kemudian dicocokkan dengan kunci jawaban aslinya (y_test) menggunakan accuracy_score dan classification_report untuk mendapatkan nilai akurasi, presisi, dan recall.
+<img width="755" height="166" alt="image" src="https://github.com/user-attachments/assets/579073b4-d351-42a7-952c-ace4ee3504d9" />
 
 📂 Dataset Components:
 Dataset utama (train.csv) memiliki ribuan baris, namun proyek ini berfokus pada dua kolom esensial untuk NLP:
