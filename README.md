@@ -63,6 +63,7 @@ Bagian terakhir ini menggunakan matplotlib untuk mengubah angka hitungan tadi me
 Dataset teks yang sudah bersih dibagi menjadi data latih (training data) dan data uji (testing data) dengan proporsi 80:20 agar hasil eksperimen dapat divalidasi dengan adil.
 <img width="542" height="197" alt="image" src="https://github.com/user-attachments/assets/29b2fbf6-f928-4dbf-8deb-70a188ecaf91" />
 
+
 6.Ekstraksi Fitur (TF-IDF Vectorization)
 Teks diubah menjadi representasi numerik menggunakan TfidfVectorizer. Fitur dibatasi menjadi 5000 kata paling penting (max_features=5000) untuk mengurangi beban komputasi.
 <img width="592" height="152" alt="image" src="https://github.com/user-attachments/assets/1ddaf4b0-0ade-4242-9e7a-8c86d6af5d26" />
