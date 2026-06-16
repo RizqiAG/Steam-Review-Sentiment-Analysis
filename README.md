@@ -87,6 +87,15 @@ user_review: Berisi teks ulasan lengkap dari pemain mengenai pengalaman mereka b
 
 
 
+<img width="1142" height="762" alt="image" src="https://github.com/user-attachments/assets/1e29c970-4e19-4029-9f9b-169038d56280" />
+
+
+
+
+
+
+
+
 user_suggestion: Label target klasifikasi, di mana bernilai 1 jika pengguna merekomendasikan game (Positif), dan 0 jika tidak merekomendasikan (Negatif) (Tipe: Integer).
 <img width="1091" height="416" alt="3fccfc6e-2b91-44f5-861b-f3b04d426506" src="https://github.com/user-attachments/assets/774ecb3c-560a-41d3-bc83-669fdd62235f" />
 
